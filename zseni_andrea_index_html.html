@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zseni Andrea | Némettanár</title>
+  <meta name="description" content="Zseni Andrea némettanár személyre szabott nyelvoktatással, nyelvvizsga-felkészítéssel, üzleti némettel, fordítással és tolmácsolással." />
+  <style>
+    :root {
+      --bg: #f7f4ef;
+      --card: #ffffff;
+      --text: #2f2a24;
+      --muted: #6f675f;
+      --accent: #c96b2c;
+      --accent-dark: #a9531d;
+      --line: #e8dfd5;
+      --soft: #fff4eb;
+      --dark: #1f1a16;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .container {
+      width: min(1100px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #fff9f4 0%, #ffffff 60%, #fff1e5 100%);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 32px;
+      padding: 72px 0;
+      align-items: center;
+    }
+
+    .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      font-size: 0.85rem;
+      font-weight: bold;
+      color: var(--accent-dark);
+      margin-bottom: 12px;
+    }
+
+    h1, h2, h3 {
+      margin: 0 0 16px;
+      line-height: 1.2;
+    }
+
+    h1 { font-size: clamp(2.4rem, 6vw, 4.2rem); }
+    h2 { font-size: clamp(1.8rem, 4vw, 2.2rem); }
+    h3 { font-size: 1.2rem; }
+
+    .lead {
+      font-size: 1.15rem;
+      color: var(--muted);
+      max-width: 700px;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 28px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 22px;
+      border-radius: 16px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.2s ease;
+      border: 1px solid transparent;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: white;
+    }
+
+    .btn-primary:hover { background: var(--accent-dark); }
+
+    .btn-secondary {
+      background: white;
+      color: var(--text);
+      border-color: var(--line);
+    }
+
+    .btn-secondary:hover { border-color: var(--accent); }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      padding: 28px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+    }
+
+    section { padding: 72px 0; }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 28px;
+    }
+
+    .stats {
+      display: grid;
+      gap: 16px;
+    }
+
+    .stat strong {
+      display: block;
+      font-size: 2rem;
+      color: var(--accent);
+      margin-bottom: 6px;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .service-item,
+    .method-item,
+    .testimonial {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 22px;
+    }
+
+    .methods {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+
+    .method-item {
+      background: var(--soft);
+    }
+
+    .testimonials-wrap {
+      background: var(--dark);
+      color: white;
+    }
+
+    .testimonials {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .testimonial {
+      background: rgba(255,255,255,0.08);
+      border-color: rgba(255,255,255,0.08);
+    }
+
+    .testimonial .author {
+      margin-top: 14px;
+      color: #ffd2b3;
+      font-weight: bold;
+    }
+
+    .contact-box {
+      max-width: 820px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 24px 0 40px;
+      color: var(--muted);
+      text-align: center;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 900px) {
+      .hero-grid,
+      .grid-2,
+      .services,
+      .methods,
+      .testimonials {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-grid { padding: 48px 0; }
+      section { padding: 52px 0; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="container hero-grid">
+      <div>
+        <div class="eyebrow">Német nyelvoktatás személyre szabva</div>
+        <h1>Zseni Andrea</h1>
+        <p style="font-size:1.6rem; margin-top:-6px; color:#4b433b;">Némettanár, fordító és tolmács</p>
+        <p class="lead">
+          1992 óta tanítok németet. Célom, hogy tanítványaim magabiztosan,
+          valódi helyzetekben is használható tudással fejlődjenek — legyen szó
+          nyelvvizsgáról, munkáról vagy újrakezdésről.
+        </p>
+        <div class="buttons">
+          <a class="btn btn-primary" href="#kapcsolat">Kapcsolat</a>
+          <a class="btn btn-secondary" href="#szolgaltatasok">Szolgáltatások</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Miért engem válassz?</h2>
+        <h3>Személyre szabott oktatás</h3>
+        <p>Minden óra az egyéni célokhoz, szinthez és tanulási tempóhoz igazodik.</p>
+
+        <h3>Interaktív, gyakorlatias módszer</h3>
+        <p>Nem csak szabályokat tanítok, hanem használható nyelvi kompetenciát építünk.</p>
+
+        <h3>Jó hangulat, valódi fejlődés</h3>
+        <p>A célorientált, oldott légkör segít leküzdeni a megszólalástól való félelmet is.</p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="bemutatkozas">
+      <div class="container grid-2">
+        <div>
+          <h2>Bemutatkozás</h2>
+          <p>
+            Német nyelvtanári diplomámat az ELTE Tanárképző Főiskolai Karán szereztem.
+            Tanítottam általános és középiskolában, érettségiztettem, és közel 30 éve
+            foglalkozom felnőttek nyelvoktatásával nyelviskolai és magánórai keretek között.
+          </p>
+          <p>
+            Tapasztalatot szereztem üzleti, pénzügyi és műszaki területen is:
+            vállalati képzések, szaknyelvi oktatás, fordítás, tolmácsolás és
+            külföldi munkavállalásra felkészítés egyaránt része a munkámnak.
+          </p>
+        </div>
+
+        <div class="stats">
+          <div class="card stat"><strong>1992</strong>óta tanít németet</div>
+          <div class="card stat"><strong>30 év</strong>felnőttoktatási tapasztalat</div>
+          <div class="card stat"><strong>Kezdőtől</strong>haladóig, vizsgafelkészítésig</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="szolgaltatasok" style="background:#fff; border-top:1px solid var(--line); border-bottom:1px solid var(--line);">
+      <div class="container">
+        <h2>Szolgáltatások</h2>
+        <div class="services">
+          <div class="service-item">Alap- és középfokú nyelvvizsga-felkészítés</div>
+          <div class="service-item">PWD (gazdasági nyelvvizsga) felkészítés</div>
+          <div class="service-item">Vállalati kihelyezett tanfolyamok</div>
+          <div class="service-item">Német üzleti kommunikáció</div>
+          <div class="service-item">Pénzügyi, számviteli és üzleti német</div>
+          <div class="service-item">Magánórák kezdőtől haladóig</div>
+          <div class="service-item">Felkészítés külföldi munkavállalásra</div>
+          <div class="service-item">Magyar mint idegen nyelv tanítása</div>
+          <div class="service-item">Fordítás és tolmácsolás</div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2>Tanítási módszer</h2>
+        <div class="methods">
+          <div class="method-item">
+            <h3>Személyiségközpontú megközelítés</h3>
+            <p>Kiemelt figyelmet kap a motiváció fenntartása, a tananyag rugalmas alakítása és a tanuló aktuális céljaihoz igazított fejlődés.</p>
+          </div>
+          <div class="method-item">
+            <h3>Gyakorlati kommunikáció</h3>
+            <p>Az órák fókusza a valós élethelyzetekben használható nyelvtudás, a magabiztos megszólalás és a nyelvi gátak oldása.</p>
+          </div>
+          <div class="method-item">
+            <h3>Logikus, érthető rendszer</h3>
+            <p>Nem száraz szabályok memorizálása történik, hanem a német nyelv belső összefüggéseinek megértése és tudatos használata.</p>
+          </div>
+          <div class="method-item">
+            <h3>Célorientált fejlődés</h3>
+            <p>Legyen szó nyelvvizsgáról, állásról vagy szakmai kommunikációról, az oktatás mindig a konkrét célhoz igazodik.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials-wrap">
+      <div class="container">
+        <h2>Vélemények</h2>
+        <div class="testimonials">
+          <div class="testimonial">
+            <p>„Annyira személyre szabottan tanított, amire szükségem volt, hogy most, 8 év után is erre építve használom, és szeretem a német nyelvet.”</p>
+            <div class="author">— M. Zsuzsa</div>
+          </div>
+          <div class="testimonial">
+            <p>„Figyelt az aktuális igényekre, a célomra, és rám szabta a feladatokat. Több mint 10 év kihagyás után újra meg mertem szólalni németül, és Andival sikerült!”</p>
+            <div class="author">— T. Viktória</div>
+          </div>
+          <div class="testimonial">
+            <p>„Minimális nyelvtudással indultam, és végül a szakmai némettel is elég jól elboldogultam.”</p>
+            <div class="author">— H. L. Erzsébet</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="kapcsolat">
+      <div class="container">
+        <div class="card contact-box">
+          <h2>Kapcsolat</h2>
+          <p>
+            Várom azok jelentkezését, akik szeretnének magabiztosabban kommunikálni németül,
+            nyelvvizsgára készülnek, vagy szakmai céljaikhoz keresnek személyre szabott támogatást.
+          </p>
+          <p><strong>E-mail:</strong> sajat.email@pelda.hu</p>
+          <p><strong>Telefon:</strong> +36 30 123 4567</p>
+          <p><strong>Helyszín:</strong> online és személyesen megbeszélés szerint</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      © Zseni Andrea — Német nyelvoktatás
+    </div>
+  </footer>
+</body>
+</html>
